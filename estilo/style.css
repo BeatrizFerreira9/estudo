@@ -1,0 +1,233 @@
+@charset "UFT-8";
+/*
+#334139
+#436B55
+#334139
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@font-face{
+    
+    font-family: "Android";
+    src: url('../pacote-projeto-d010/fontes/idroid.otf') format('opentype'); /*IMPORTAÇÃO DE FONTE*/
+
+    font-weight: normal; /*DEFINE A ESPRESSURA DA FONTE*/
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #064423;
+
+}
+
+main a:hover{
+    text-decoration: underline;
+    color:#05d660;
+
+}
+
+main img.menor{
+    width:350px; 
+    margin: auto;
+    display:block;
+}  
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+    font-size: 1.1em ;
+
+}
+
+main strong{
+    color: rgb(5, 112, 5) ;
+    font-weight: bolder;
+    
+    padding: 2px 6px;
+
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+:root{/*VARIAVEL - */
+    --cor0: #feeb82;
+    --cormaisclara: #C5EBD6;
+    --corclaro:#436B55;
+    --cor:#5C9175;
+    --cormaisescouro:#334139;
+    --cor5:#055128;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque:"Bebas Neue", sans-serif;
+    --font-android:'Android', cursive;
+    
+
+
+}
+
+html, body { /*Aqui é para o GRADIENTE pegar toda a pagina pois o MAIN impossibilita*/
+  height: 100%;
+  margin: 0;
+}
+
+body{
+    
+    background-attachment: fixed;
+      background-image: linear-gradient(to bottom, #e8f5ee, #b2b7b4);
+
+    font-family: var(--fonte-padrao);
+
+}
+
+header{
+    background-color: #1a5c37;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    background-image: linear-gradient(to bottom, #1a5c37, #05ab4d );
+
+}                                                                                       
+ 
+
+header > h1 /*SELECIONA APENAS O H1 QUE ESTA DENTRO DO HEADER*/{
+    color: white;
+    text-shadow: 3px 3px 0 var(--cor);
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: normal;
+
+
+}
+
+
+header > p{
+font-size: 1.2em;
+color: rgb(246, 246, 246);
+font-family: var(--fonte-padrao);
+max-width:  600px; 
+margin: auto;
+padding-left: 10px;
+padding-right: 10px;
+margin-bottom: 30px;
+}
+
+nav{
+    background-color: #1a5c37;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.37);
+
+
+}
+
+nav > a{
+    color: #4ef897;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 7px;
+    transition-duration: .5s;
+}
+
+nav > a:hover{
+
+        background-color: #05d660;
+    color:#085529;
+}
+
+main{
+    background-color: #9bf0a8bd;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.615);
+    border-bottom-left-radius: 10px  ;
+border-bottom-right-radius: 10px; 
+ margin-bottom: 5px;
+ 
+}
+
+main  h1{
+    color: rgb(8, 101, 8);
+    font-family: var(--font-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2{
+    color: var(--cor5);
+    font-family: var(--font-android);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, #04c004, transparent);
+    text-indent: 8px;
+    font-weight: normal;
+
+}
+
+main img{
+    width: 100%;
+}
+
+aside{
+background-color: #04720489;
+padding: 10px;
+border-radius: 15px;
+box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.686) ;
+
+}
+
+aside > ul{
+list-style-position: inside;
+columns: 2;
+list-style-type: '\2714\00A0'; /*NÃO É COMPATIVEL COM TODO TIPO DE NAVEGADOR*/
+
+}
+
+aside > h3{
+background-color:#038430e9;
+color: #ffff;
+padding: 3px;
+margin: -10px -10px 0 -10px; /*cima baixo esquerda direita*/
+border-radius: 10px 10px 0px 0px;
+font-weight: normal;
+
+
+}
+
+footer{
+    background-color: var(--cormaisescouro);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+div.play{
+background-color: #055128;
+padding: 20px;
+
+margin: 0px -20px 30px -20px;
+position: relative;
+
+}
+
+div.play video{
+width: 60%;
+height: auto;
+display: block;
+margin: 0 auto;
+
+}
+
