@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando imagem de fundo</title>
+
+    <style>
+body{
+    background-image: url('imagem/pattern001.png')
+}
+
+
+    div.retangular{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    display: inline-block; 
+    background-color: rgb(208, 181, 234);
+}
+
+#primeiro{
+    background-color: aqua;
+}
+
+#segundo{
+    background-image: linear-gradient(to bottom, rgb(68, 167, 243), rgb(196, 56, 228));
+}
+
+#terceiro{
+    background-image: url('imagem/pattern004.png')
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+<div class="retangular" id="primeiro"></div>
+
+
+<div class="retangular" id="segundo"></div>
+
+
+<div class="retangular" id="terceiro"></div>
+
+
+
+</body>
+</html>
