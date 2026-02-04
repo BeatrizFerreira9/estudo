@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento vertical</title>
+<style>
+#container{
+    background-image: url('imagem/target001.png');
+    position: relative;
+    height: 500px;
+    background-color: aqua;
+    background-size: 100% 100%;
+}
+
+#conteudo{
+    background-image: url('imagem/target001.png');
+    background-size: 100% 100%;
+position: absolute;
+height: 200px;
+width: 400px;
+background-color: blue;
+
+left: 50%;
+top: 50%;
+
+transform: translate(-50%, -50%);
+
+}
+
+</style>
+
+
 </head>
 <body>
     
+    <section id="container">
+        <h1>serviços</h1>
+        <h2>home</h2>
+<article id="conteudo">
 
+</article>
+
+    </section>
+
+    <form action="/enviar"  method="POST"></form>><label for="nome">nome</label>
+  <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+ <input type="submit" value="Enviar"></form>
 
 </body>
 </html>
