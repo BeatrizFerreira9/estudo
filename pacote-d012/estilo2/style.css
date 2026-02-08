@@ -1,22 +1,58 @@
 @charset "UFT-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+NZ+Basic:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gravitas+One&family=Playwrite+NZ+Basic:wght@100..400&display=swap');
+
+:root{
+ --fontpadrao: Verdana, Geneva, Tahoma, sans-serif'verdana';
+
+--fonttexto: "Playwrite NZ Basic", cursive;
+
+--fontheader: "Gravitas One", serif;
+}
+
+
 *{
 margin: 0px;
 padding: 0px;
+
 }
+
 .imagem{
-    background-color: rgba(52, 55, 55, 0.596);
-  
+    background-color: rgba(0, 0, 0, 0.596);
+    color: #ffff;
+    font-family: var(--fonttexto);
+ 
+}
+
+.imagem>p{
+   display: inline-block;
+    width: 400px;
+    background-color: rgba(30, 28, 28, 0.734);
+
+
+    }
+
+section.normal{
+    background-color: #ffff;
+    
 }
 
 section{
-    padding-top: ;
-
+    padding-top: 10vh;
+    padding-bottom: 16vh;
+    line-height: 2em;
+    font-size: 1em;
+    font-family: var(--fonttexto);
+    padding-left: 30px;
+    
 }
 
 html, body{
 background-color: darkgray;
   min-height: 100vh;
+  font-family: var(--fontpadrao);
 }
 
 header{
@@ -39,16 +75,19 @@ text-decoration: underline;
 header > h1{
 padding-top: 50px;
 font-variant: small-caps;
+font-family: var(--fontheader);
+font-size: 4vw;
 
 }
 
 header > p{
-    padding-bottom: 50px;
+    padding-bottom: 2em;
 }
 
 section.normal{
     background-color: #ffff;
     color: black;
+
 }
 
 
