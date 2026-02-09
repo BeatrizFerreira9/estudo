@@ -20,18 +20,19 @@ padding: 0px;
 }
 
 .imagem{
-    background-color: rgba(0, 0, 0, 0.596);
+    background-color: rgba(0, 0, 0, 0.227);
     color: #ffff;
     font-family: var(--fonttexto);
- 
+    box-shadow: inset 6px 6px 13px 0px black;
+   background-attachment: fixed;
 }
 
 .imagem>p{
    display: inline-block;
-    width: 400px;
+    padding: 5px;
     background-color: rgba(30, 28, 28, 0.734);
-
-
+    text-shadow: 1px  1px 2px black;
+    background-size: cover;
     }
 
 section.normal{
@@ -46,7 +47,12 @@ section{
     font-size: 1em;
     font-family: var(--fonttexto);
     padding-left: 30px;
-    
+    font-size: 1vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+
 }
 
 html, body{
@@ -76,7 +82,7 @@ header > h1{
 padding-top: 50px;
 font-variant: small-caps;
 font-family: var(--fontheader);
-font-size: 4vw;
+font-size: 10vh;
 
 }
 
@@ -91,6 +97,17 @@ section.normal{
 }
 
 
+#foto{
+    background-image: url(../imagens/background001.jpg);
+   background-position: right center;
+    background-size: cover;
+
+}
+
+#foto02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: bottom top;
+}
 
 
 footer{
@@ -99,4 +116,5 @@ footer{
     text-align: center;
     padding: 10px;
  
+
 }
